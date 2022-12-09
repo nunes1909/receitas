@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EdittextLogin">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/drawable_edittext</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:maxLength">150</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+</resources>
