@@ -6,4 +6,13 @@
     <string name="mais">Mais</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="btn_limpar_cadastro">Botão limpar cadastro</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="confirme_sua_senha">Confirme sua senha</string>
+    <string name="senha">Senha</string>
+    <string name="pesquise_suas_receitas">Pesquise suas receitas</string>
+    <string name="imagem_da_lista_minhas_receitas">Imagem da lista minhas receitas</string>
+    <string name="clique_para_ver_mais">Clique para ver mais...</string>
+    <string name="nivel_facil">Nivel fácil</string>
+    <string name="nivel_medio">Médio</string>
+    <string name="nivel_dificil">Difícil</string>
 </resources>

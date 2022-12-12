@@ -31,7 +31,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/ic_locked"
-        android:hint="@string/email"
+        android:hint="@string/senha"
         android:inputType="numberPassword|number"
         android:maxLength="20"
         app:layout_constraintBottom_toTopOf="@+id/btnLoginCadastrar"

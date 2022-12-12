@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSecondary">
+
+        <ImageView
+            android:id="@+id/ivItemMinhasReceitas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/imagem_da_lista_minhas_receitas"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvItemTitleMinhasReceitas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.35"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvItemTitleMinhasReceitas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivItemMinhasReceitas"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Cachorro quente" />
+
+        <TextView
+            android:id="@+id/tvItemDescriptionMinhasReceitas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvItemTitleMinhasReceitas"
+            app:layout_constraintStart_toStartOf="@id/tvItemTitleMinhasReceitas"
+            app:layout_constraintTop_toBottomOf="@id/tvItemTitleMinhasReceitas"
+            tools:text="Pão, salsicha, batata palha, cebola, tomate" />
+
+        <TextView
+            android:id="@+id/tvItemInfoMinhasReceitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/clique_para_ver_mais"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvItemDescriptionMinhasReceitas"
+            app:layout_constraintTop_toBottomOf="@id/tvItemDescriptionMinhasReceitas" />
+
+        <LinearLayout
+            android:id="@+id/viewGroupItemDificuldade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/tvItemInfoMinhasReceitas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvItemInfoMinhasReceitas">
+
+            <ImageView
+                android:id="@+id/nivel_facil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nivel_facil"
+                tools:src="@drawable/ic_star_true" />
+
+            <ImageView
+                android:id="@+id/nivel_medio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nivel_medio"
+                tools:src="@drawable/ic_star_false" />
+
+            <ImageView
+                android:id="@+id/nivel_dificil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nivel_dificil"
+                tools:src="@drawable/ic_star_false" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
