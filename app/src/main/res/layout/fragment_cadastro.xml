@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_background">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCadastroEmail"
+        style="@style/EdittextLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/ic_person"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/etCadastroSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="gnunes1909@gmail.com" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCadastroSenha"
+        style="@style/EdittextLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_locked"
+        android:hint="@string/email"
+        android:inputType="number"
+        android:maxLength="20"
+        app:layout_constraintBottom_toTopOf="@+id/etCadastroConfSenha"
+        app:layout_constraintEnd_toEndOf="@id/etCadastroEmail"
+        app:layout_constraintStart_toStartOf="@id/etCadastroEmail"
+        app:layout_constraintTop_toBottomOf="@id/etCadastroEmail"
+        tools:text="11111111" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCadastroConfSenha"
+        style="@style/EdittextLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_locked"
+        android:hint="@string/email"
+        android:inputType="number"
+        android:maxLength="20"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastroCadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/etCadastroSenha"
+        app:layout_constraintStart_toStartOf="@+id/etCadastroSenha"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastroSenha"
+        tools:text="11111111" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastroCadastrar"
+        style="@style/ButtonCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCadastroLimpar"
+        app:layout_constraintStart_toStartOf="@+id/etCadastroConfSenha"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastroConfSenha" />
+
+    <ImageView
+        android:id="@+id/btnCadastroLimpar"
+        style="@style/ButtonCadastroLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/btn_limpar_cadastro"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCadastroCadastrar"
+        app:layout_constraintEnd_toEndOf="@id/etCadastroConfSenha"
+        app:layout_constraintStart_toEndOf="@+id/btnCadastroCadastrar"
+        app:layout_constraintTop_toBottomOf="@id/etCadastroConfSenha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
