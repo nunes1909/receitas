@@ -15,4 +15,5 @@
     <string name="nivel_facil">Nivel fácil</string>
     <string name="nivel_medio">Médio</string>
     <string name="nivel_dificil">Difícil</string>
+    <string name="btn_nova_receita">Botão nova receita</string>
 </resources>
