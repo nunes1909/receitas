@@ -16,4 +16,9 @@
     <string name="nivel_medio">Médio</string>
     <string name="nivel_dificil">Difícil</string>
     <string name="btn_nova_receita">Botão nova receita</string>
+    <string name="categorias">Categorias</string>
+    <string name="comidas">Comidas</string>
+    <string name="bebidas">Bebidas</string>
+    <string name="minhas_receitas">Minhas receitas</string>
+    <string name="imagem_detalhes">Imagem detalhes</string>
 </resources>

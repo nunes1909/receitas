@@ -7,7 +7,7 @@
     android:background="@drawable/drawable_background">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etMinhasReceitasPesquisar"
+        android:id="@+id/etReceitasPesquisar"
         style="@style/EdittextLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -17,42 +17,42 @@
         android:hint="@string/pesquise_suas_receitas"
         android:inputType="textCapWords"
         android:maxLength="20"
-        app:layout_constraintEnd_toStartOf="@+id/btnMinhasReceitasFilter"
+        app:layout_constraintEnd_toStartOf="@+id/btnReceitasFilter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/btnMinhasReceitasFilter"
+        android:id="@+id/btnReceitasFilter"
         style="@style/ButtonFilter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/btn_limpar_cadastro"
-        app:layout_constraintBottom_toBottomOf="@+id/etMinhasReceitasPesquisar"
+        app:layout_constraintBottom_toBottomOf="@+id/etReceitasPesquisar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/etMinhasReceitasPesquisar"
+        app:layout_constraintStart_toEndOf="@+id/etReceitasPesquisar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMinhasReceitas"
+        android:id="@+id/rvReceitas"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etMinhasReceitasPesquisar"
-        tools:listitem="@layout/item_minhas_receitas" />
+        app:layout_constraintTop_toBottomOf="@id/etReceitasPesquisar"
+        tools:listitem="@layout/item_receitas" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabMinhasReceitas"
+        android:id="@+id/fabReceitas"
         style="@style/FabNovaReceita"
         android:contentDescription="@string/btn_nova_receita"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ProgressBar
-        android:id="@+id/pbLoadMinhasReceitas"
+        android:id="@+id/pbLoadReceitas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"

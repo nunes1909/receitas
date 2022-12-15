@@ -14,19 +14,19 @@
         android:background="@color/colorSecondary">
 
         <ImageView
-            android:id="@+id/ivItemCategoriasMeal"
+            android:id="@+id/ivItemCategoriasList"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:contentDescription="@string/imagem_da_lista_minhas_receitas"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@id/tvItemTitleCategoriasMeal"
+            app:layout_constraintBottom_toTopOf="@id/tvItemTitleCategoriasList"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/tvItemTitleCategoriasMeal"
+            android:id="@+id/tvItemTitleCategoriasList"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -37,7 +37,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivItemCategoriasMeal"
+            app:layout_constraintTop_toBottomOf="@id/ivItemCategoriasList"
             tools:text="Cachorro quente" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

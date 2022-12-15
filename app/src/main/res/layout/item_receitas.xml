@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp"
+    android:layout_margin="8dp"
     app:cardCornerRadius="6dp"
     app:cardElevation="12dp">
 
@@ -14,20 +14,20 @@
         android:background="@color/colorSecondary">
 
         <ImageView
-            android:id="@+id/ivItemMinhasReceitas"
+            android:id="@+id/ivItemReceitas"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:contentDescription="@string/imagem_da_lista_minhas_receitas"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/tvItemTitleMinhasReceitas"
+            app:layout_constraintEnd_toStartOf="@id/tvItemTitleReceitas"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.35"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/tvItemTitleMinhasReceitas"
+            android:id="@+id/tvItemTitleReceitas"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -35,12 +35,12 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/ivItemMinhasReceitas"
+            app:layout_constraintStart_toEndOf="@id/ivItemReceitas"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Cachorro quente" />
 
         <TextView
-            android:id="@+id/tvItemDescriptionMinhasReceitas"
+            android:id="@+id/tvItemDescriptionReceitas"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
@@ -48,13 +48,13 @@
             android:maxLines="1"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/tvItemTitleMinhasReceitas"
-            app:layout_constraintStart_toStartOf="@id/tvItemTitleMinhasReceitas"
-            app:layout_constraintTop_toBottomOf="@id/tvItemTitleMinhasReceitas"
+            app:layout_constraintEnd_toEndOf="@+id/tvItemTitleReceitas"
+            app:layout_constraintStart_toStartOf="@id/tvItemTitleReceitas"
+            app:layout_constraintTop_toBottomOf="@id/tvItemTitleReceitas"
             tools:text="Pão, salsicha, batata palha, cebola, tomate" />
 
         <TextView
-            android:id="@+id/tvItemInfoMinhasReceitas"
+            android:id="@+id/tvItemInfoReceitas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -62,8 +62,8 @@
             android:text="@string/clique_para_ver_mais"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@id/tvItemDescriptionMinhasReceitas"
-            app:layout_constraintTop_toBottomOf="@id/tvItemDescriptionMinhasReceitas" />
+            app:layout_constraintStart_toStartOf="@id/tvItemDescriptionReceitas"
+            app:layout_constraintTop_toBottomOf="@id/tvItemDescriptionReceitas" />
 
         <LinearLayout
             android:id="@+id/viewGroupItemDificuldade"
@@ -71,9 +71,9 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="@+id/tvItemInfoMinhasReceitas"
+            app:layout_constraintBottom_toBottomOf="@+id/tvItemInfoReceitas"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tvItemInfoMinhasReceitas">
+            app:layout_constraintTop_toTopOf="@+id/tvItemInfoReceitas">
 
             <ImageView
                 android:id="@+id/nivel_facil"
